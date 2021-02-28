@@ -18,7 +18,7 @@ int equalStacks(int h1_count, int* h1, int h2_count, int* h2, int h3_count, int*
         if(s1==s2 && s2==s3)
             return s1;
 
-        if(s1>=s2 && s2>=s3)
+        if(s1>=s2 && s1>=s3)
             s1-=h1[top1++];
         else if (s2>=s1 && s2>=s3)
                 s2-=h2[top2++];
